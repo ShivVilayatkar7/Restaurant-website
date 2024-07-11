@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/restaurant.png" type="image/x-icon">
+    <title>Recipe Book</title>
+</head>
+<body>
+    <div class="navContainer">
+    <!-- navigation bar -->
+    <div id="links" class="navbarSmall">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
+        <a href="#home">Home </a>
+        <a href="#categories">Categories </a>
+        <a href="#about">About </a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="baricon">
+        <img src="image/KrishnaLogo1.png" style="width: 20%; border-radius: 500px;">
+        <span style="font-size:30px; cursor:pointer" class="menubars" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="navbar">
+        <ul id="name">
+            <li><h2><img src="image/KLogo1.png" style="width: 60px; border-radius: 500px;"></h2></li>
+        </ul>
+        <ul>
+            <li><a href="#home">Home </a></li>
+            <li><a href="#categories">Categories </a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <!-- mian content -->
+    <div class="subContainer">
+        <div class="page1" id="home">
+            <div class="textbox">
+                <h1>Welcome to Krishna's</h1>
+                <h2><span>Virtual</span> Restaurants</h2>
+                <p>The chief ingredient in yummy food is love.. <br> and that the thing we bring for you</p>
+                <input type="search" placeholder="Search" id="srch">
+            </div>
+        </div>
+        <!-- categories -->
+        <div class="page2" id="categories">
+            <div class="catheading">
+                <h1>Different Categories Of Food</h1>
+            </div>
+            <div class="foodMenu">
+                <!-- -----veg box------ -->
+                <div class="imgbox">
+                    <img src="image/vegfood.jpg" alt="veg" width="150px">
+                    <p><a href="#veg">Veg</a></p>
+                </div>
+                <!-- ------nonveg------ -->
+                <div class="imgbox">
+                    <img src="image/chiken.jpg" alt="nonveg" width="150px">
+                    <p><a href="#nonveg">Non-veg</a></p>
+                </div>
+                <!-- ------sweets------ -->
+                <div class="imgbox">
+                    <img src="image/cupcake.jpg" alt="sweet" width="150px">
+                    <p><a href="#sweet">Sweets</a></p>
+                </div>
+                <!-- ------fastfood------ -->
+                <div class="imgbox">
+                    <img src="image/frenchfries.jpg" alt="fastfood" width="150px">
+                    <p><a href="#Fastfood">Fastfood</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="page3" id="about">
+            <div class="subAbout">
+                <div class="about">
+                    <h1>About us</h1>
+                    <h2>Our services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus pariatur reiciendis repellat veritatis assumenda dignissimos laboriosam similique, officia alias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, magni modi inventore eos a molestiae enim eum qui quam excepturi. Lorem ipsum dolor sit amet</p>
+                </div>
+                <h2>Happy Customers</h2>
+                <div class="review">
+                    <div class="custFeed">
+                        <h3>babu bhaiya</h3>
+                        <p>"ekdam mast khana milta hai, mai to khush ho gaya."</p>
+                    </div>
+                    <div class="custFeed">
+                        <h3>Aaa raaju</h3>
+                        <p>"khane ka chakkar babu bhaiya, khane ka"</p>
+                    </div>
+                    <div class="custFeed">
+                        <h3>Shyaam</h3>
+                        <p>"what a delicious food. amazing kya bolte raaju...."</p>
+                    </div>    
+                </div>    
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="page4" id="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" id="enter" placeholder="Name" required name="uname"><br>
+                <input type="text" id="enter" placeholder="E-mail" required name="mail"><br>
+                <input type="text" id="enter" placeholder="response" required name="greet"><br>
+                <input type="text" id="enter" placeholder="message" required name="msg"><br>
+                <input type="submit" id="send" value="Send response">
+            </form>
+        </div>
+    </div>
+    <div class="footerr">
+        <div class="innerfoot">
+            <h2>krishna's Services</h2>
+            <div class="icons">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-whatsapp"></i></a>
+            </div>
+            <p>All copyright reserved 2024&copy;</p>
+            <a href="">krishna2534@gmail.com</a>    
+        </div>
+    </div>
+
+    <script>
+        function openNav(){
+            document.getElementById("links").style.width = "100%";
+        }
+        function closeNav(){
+            document.getElementById("links").style.width = "0";
+        }    
+    </script>
+</body>
+</html>
